@@ -16,11 +16,21 @@
 
 <!-- 넘겨주는 코드 -->
 <c:set var="user" value="${param.user }"/>
+<!-- 체크한 user를 가져온다 -->
+
+<!-- 가져온 유저를 가지고 같은지 아닌지를 판별 후 코드실행 -->
 <c:choose>
 	<c:when test="${user == 'user' }">
+	<!-- 리퀘스트값 전달안됌 주소창에 추가한 값이 남는다 -->
+	<c:redirect url="userPage.jsp">
+		<c:param name="n" value="jstl로 넘겨줌"/>
+	</c:redirect>
+	<!-- 
+	두가지 방법이 있으나 farword를 이용하게 되면 주소창에 값이 안보인다
 	<jsp:forward page="userPage.jsp">
 				<jsp:param value="추가로 넘어가는 값" name="n"/>
 			</jsp:forward>
+			 -->
 	</c:when>
 	<c:otherwise>
 		<jsp:forward page='adminPage.jsp'>
