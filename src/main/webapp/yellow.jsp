@@ -8,7 +8,6 @@
 </head>
 <body>yellow.jsp<br>
 	노란페이지입니다.
-	<jsp:useBean id="dao" class="sungtaek-jsp04.memberDAO"/>
 
 </body>
 </html>

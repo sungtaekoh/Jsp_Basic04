@@ -7,10 +7,10 @@
 <title>Insert title here</title>
 </head>
 <body>adminPage.jsp<br>
-	아이디 : <%= request.getParameter("id") %><br>
+	아이디:<%= request.getParameter("id") %><br>
 	비밀번호 : ${param.pwd }<br>
 	사용자 : ${param.user }<br>
-	추가 값 : <%= request.getParameter("n") %>
+	추가값 : <%= request.getParameter("n") %>
 	<hr>
 	<a href="javascript:history.back()">이전</a>
 </body>
