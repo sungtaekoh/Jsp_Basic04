@@ -6,8 +6,7 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 </head>
-<body>yellow.jsp<br>
-	노란페이지입니다.
-	<jsp:useBean id="dao" class="jsp04.MemberDAO"/>
+<body>
+
 </body>
 </html>

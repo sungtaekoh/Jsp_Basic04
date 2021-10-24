@@ -6,7 +6,13 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 </head>
-<body>
+<body>membership.jsp<br>
+	<form action="result.jsp">
+		<input type="text" name="id"><br>
+		<input type="text" name="pwd"><br>
+		<input type="text" name="name"><br>
+		<input type="submit" value="회원가입"><br>
+	</form>
 
 </body>
 </html>
